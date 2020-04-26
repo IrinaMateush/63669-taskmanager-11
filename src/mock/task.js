@@ -17,14 +17,14 @@ const DefaultRepeatingDays = {
 };
 
 
+const getRandomIntegerNumber = (min, max) => {
+  return min + Math.floor(Math.random() * (max - min));
+};
+
 const getRandomArrayItem = (array) => {
   const randomIndex = getRandomIntegerNumber(0, array.length);
 
   return array[randomIndex];
-};
-
-const getRandomIntegerNumber = (min, max) => {
-  return min + Math.floor(Math.random() * (max - min));
 };
 
 const getRandomDate = () => {
@@ -50,7 +50,7 @@ const generateTask = () => {
     description: getRandomArrayItem(DescriptionItems),
     dueDate,
     repeatingDays: dueDate ? DefaultRepeatingDays : generateRepeatingDays(),
-    color: getRandomArrayItem(COLORS),
+    color: (COLORS),
     isArchive: Math.random() > 0.5,
     isFavorite: Math.random() > 0.5,
   };
