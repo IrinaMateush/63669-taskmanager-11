@@ -2,7 +2,7 @@ import {MONTH_NAMES} from "../const.js";
 import {formatTime, createElement} from "../utils.js";
 
 
-  const createTaskTemplate = (task) => {
+const createTaskTemplate = (task) => {
   const {description, dueDate, color, repeatingDays, isArchive, isFavorite} = task;
 
   const isExpired = dueDate instanceof Date && dueDate < Date.now();
