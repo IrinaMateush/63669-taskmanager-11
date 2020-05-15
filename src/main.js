@@ -8,7 +8,7 @@ import SiteMenuComponent from "./components/menu.js";
 import SortComponent from "./components/sort.js";
 import {generateTasks} from "./mock/task.js";
 import {generateFilters} from "./mock/filter.js";
-import {render, RenderPosition} from "./utils.js";
+import {render, RenderPosition} from "./utils/render.js";
 import NoTasksComponent from "./components/no-tasks.js";
 
 const TASK_COUNT = 22;
